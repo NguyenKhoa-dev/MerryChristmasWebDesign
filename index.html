@@ -14,8 +14,20 @@
         <div class="loader">
             <h2 id="year">2021</h2>
         </div>
-    </div>    
-    <audio autoplay loop src="Sound.mp3" type="audio/mpeg"></audio>
+    </div>  
+    <div id="buttonAudio"><ion-icon name="musical-note"></ion-icon></div>   
+    <audio id="audio" loop>
+        <source src="Sound.mp3" type="audio/mp3">
+    </audio>
 </body>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script type="text/javascript">
+    const button = document.getElementById('buttonAudio');
+    const audio = document.getElementById('audio')
+    button.onclick = function() {
+        button.classList.add('hidden');
+        audio.play();
+    }
+</script>
 <script type="text/javascript" src="scripts.js"></script>
 </html>

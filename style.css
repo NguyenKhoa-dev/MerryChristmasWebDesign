@@ -89,6 +89,40 @@ canvas {
     z-index: 2;    
 }
 
+#buttonAudio {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background: #db0303;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+#buttonAudio:hover {
+    background: #f1f1f1;
+    border: 1px solid #db0303;
+}
+
+#buttonAudio:hover ion-icon {
+    color: #db0303;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+ion-icon {
+    font-size: 1.8em;
+    color: #f1f1f1;
+}
+
 @media (max-width: 1120px) {
     #title {
         line-height: 1.5em;
